@@ -2,15 +2,30 @@
 
 <html>
     <head>
-        <title>Tutor Queue Login</title>
+        <meta charset="utf-8">
+        <title>Tutor Login</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="loginCient.js"></script>
     </head>
     <body>
-        <form action="/tutor/login">
+        <div class="siteBanner">
+            <img src="../img/UACollegeOfScienceLogo.png" alt="UA College of Science CS Logo" class="SiteLogo">
+            <h1 class="SiteHeader"> Computer Science Tutor Queue </h1>
+        </div>
+        <h2>Tutor Queue Login</h2>
+        <form id="loginForm" action="/login">
+            <label for="userTypeSelect">I am a</label>
+            <select name="userTypeSelect">
+                <option value="studentType">Student</option>
+                <option value="tutorType">Tutor</option>
+            </select></br>
             <label for="name">Name</label></br>
-            <input type="text" id="name"></br>
+            <input type="text" id="name" required></br>
             <label for="password">Password</label></br>
-            <input type="password" id="password"></br>
-            <input type="submit" value="Submit"></br>
+            <input type="password" id="password" required></br>
+            <input type="submit" value="Login"></br>
         </form>
+        <h2>Don't have a Student account yet? Sign up</h2>
+        <input type="button" name="createAccountButton" id="createAccountButton" value="Create Account" onclick="createStudentAccount()">
     </body>
 </html>
