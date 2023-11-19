@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Request Help | Tutor Center</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script src="loginClient.js"></script>
+    </head>
+    <body>
+        <h1>Request Help</h1>
+        <h2>Please enter your information and then take a seat, someone will help you shortly</h2>
+        <form id="askForHelpForm" action="/student/add/queue">
+            <label for="name">Name</label></br>
+            <input type="text" name="name"></br>
+            <label for="email">Email</label></br>
+            <input type="email" name="emmail"></br>
+            <label for="course">What course do you want tutoring for</label></br>
+            <select name="course">
+                <option value="CSC110">CSC 110</option>
+                <option value="CSC120">CSC 120</option>
+                <option value="CSC210">CSC 210</option>
+                <option value="CSC144">CSC 144</option>
+                <option value="CSC244">CSC 244</option>
+            </select></br>
+            <label for="description">Description</label></br>
+            <textarea name="description" rows="4" cols="50" placeholder="Please enter a brief description."></textarea></br>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </body>
+</html>
