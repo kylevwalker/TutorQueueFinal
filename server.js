@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-app.use(express.json);
+app.use(express.json());
 app.use(express.static("public_html"));
 
 const mongoose = require("mongoose");
@@ -37,5 +37,5 @@ let port = "80";
 
 
 app.listen(port, () => {
-    console.log(`server runninging on http://${ip}:${port}`);
+    console.log(`server running on http://${ip}:${port}`);
 });
