@@ -104,7 +104,7 @@ app.post("/tutor/login", (req, res) => {
             res.end("SUCCESS");
         }
     });
-}
+});
 
 
 app.listen(port, () => {
